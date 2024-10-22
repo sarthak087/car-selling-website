@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.head .navBar{
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 2px 2px whitesmoke;  
+    background-color: black;  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid gray;
+}
+.navBar .Logo{
+    width: 20%;
+}
+
+.navBar .Logo img{
+  height: 85px;
+  width: 260px;
+}
+.navBar .mediaList{
+    width: 60%;
+}
+.navBar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+} 
+
+.navBar .logIn{
+    width: 20%;
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 8px 15px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    position: relative;
+    left: 200px;
+}
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+
+  .carLogo{
+    height: 100px;
+    width: 100%;
+  }
+
+  .carLogo .brandName{
+    height: 200px;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    top: -200px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.carLogo .brandHead{
+    position: relative;
+    top: -300px;
+}
+
+
+.carLogo  .brandName .carBrand{
+    position: inherit;
+    top: -100px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.carLogo  .brandName .carBrand img{
+    height: 100px;
+    width: 100px;
+} 
+
+.parent .search{
+    position: relative;
+    top: -600px;
+    left: 50px;
+} 
+.searchContaint h1{
+    position: relative;
+    top: -200px;
+    color: white;
+    font-size: 100px;
+}
+
+.parent .search .SearchBar{
+    position: relative;
+    top: -150px;
+}
+
+.parent .search input{
+    width: 350px;
+    background: transparent;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.search .SearchBtn button{
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    top: -189px;
+    left: 380px;
+}
+
+.footmain{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: 400px;
+}
+
+.footmain .footInfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footmain .footInfo .info1{
+    position: relative;
+    top: 20px;
+}
+.footmain .footInfo .info1 li{
+    list-style: none;
+    color: #fff;
+}
+
+.footmain .footInfo .info2{
+  position: relative;
+  top: 20px;
+}
+.footmain .footInfo .info2 li{
+  list-style: none;
+  color: #fff;
+}
+
+.footmain .footInfo .info3{
+  position: relative;
+  top: 20px;
+}
+.footmain .footInfo .info3 li{
+  list-style: none;
+  color: #fff;
+}
+
+.footmain .footInfo .info4{
+  position: relative;
+  top: 20px;
+}
+.footmain .footInfo .info4 li{
+  list-style: none;
+  color: #fff;
+}
+
+.mainMedia .line{
+  position: relative;
+  top: 100px;
+  border: 2px solid white;
+}
+
+.mainMedia .footsecond .copyRight{
+    color: #fff;
+    position: relative;
+    top: 150px;
+    left: 10px;
+}
+
+.mainMedia .footsecond .media{
+  color: #fff;
+  position: relative;
+  top: 100px;
+  left: 1200px;
+}
+
+.mainMedia .footsecond .media i{
+  font-size: 30px;
+  padding: 5px;
+}
+
+/* CARDS */
+
+.main{
+    position: relative;
+    top: -100px;
+}
+
+.cadrs-main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.cadrs-main .first-card{
+    height: 500px;
+    width: 400px;
+    padding-bottom: 20px;   
+    box-shadow: 0 0 3px 3px rgb(142, 140, 140);
+    border-radius: 10px;
+}
+
+.cadrs-main .first-card img{
+    height: 250px;
+    width:400px ;
+    border-radius: 10px;
+}
+
+.cadrs-main .first-card .heading{
+    padding: 30px;
+    line-height: 30px;
+    border-radius: 10px;  
+}
+
+.cadrs-main .first-card .heading h1{
+    font-size: 29px;
+    font-weight: 700px;
+}
+
+.cadrs-main .first-card .heading p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cadrs-main .first-card .heading button{
+    padding: 12px 45px 12px 45px;
+    border-radius: 30px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.cadrs-main .first-card .heading button:hover{
+    transform: scale(1);
+    transition: 1s;
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+}
+
+/* CARS DETAILS */
+
+.mainImg{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+}
+
+.bigImg{
+    height: 500px;
+    width: 40%;
+}
+
+.bigImg img{
+    height: 400px;
+    width: 650px;
+}
+
+.smallImg{
+    height: 500px;
+    width: 57%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.smallImg img{
+    height: 200px;
+    width: 400px;
+}
+
+.mainDetails{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: -50px;
+}
+
+.carDetails{
+    height: 300px;
+    width: 100%;
+}
+
+.carDetails h3{
+    padding-left: 15px;
+    position: relative;
+    top: 5px;
+}
+.bName pre{
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.carsInfo{
+    height: 140px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.carsInfo li{
+    position: relative;
+    top: 10px;
+    list-style: none;
+}
+
+.aboutCar{
+    position: relative;
+    top: -130px;
+}
+
+.aboutCar h3{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.aboutCar p{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    top: -100px;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  .Enquiry{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Enquiry table{
+    width: 800px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    position: relative;
+    top: -100px;
+    left: -200px;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f4f4f4;
+}
+.price {
+    color: #333;
+    font-weight: bold;
+}
+.onroad-price {
+    color: #007bff;
+    text-decoration: none;
+}
+.top-selling {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+}
